@@ -23,13 +23,29 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: contextsans
 github_username:  contextsans
+source: ./src
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: minimal-mistakes-jekyll
+os_links: true
+highlighter: rouge
+plugins_dir: ./_plugins
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - premonition
+  - jekyll-commonmark
+  - jekyll-last-modified-at
+  # - jekyll-dotenv
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+      hidden: false
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
