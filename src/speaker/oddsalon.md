@@ -1,5 +1,6 @@
 ---
 title: Odd Salon Talks
+published: false
 ---
 
 HUMANS OF ODD SALON: LAURA
